@@ -1,3 +1,9 @@
+import Banner from "@/components/homepage/Banner";
+
 export default function Home() {
-  return <h2 className="text-white font-bold">HomePage...</h2>;
+  return (
+    <div>
+      <Banner></Banner>
+    </div>
+  );
 }
