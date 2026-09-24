@@ -23,7 +23,7 @@ const Banner = () => {
           <div className="pt-2">
             <Link
               href="/plans"
-              className="btn border-none bg-[#ccff00]!  font-black text-xs  px-6 rounded-lg "
+              className="btn border-none bg-[#ccff00]!  text-black font-bold text-xs  px-6 rounded-lg "
             >
               BROWSE WORKOUTS
             </Link>

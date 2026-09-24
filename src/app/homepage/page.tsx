@@ -1,6 +1,6 @@
 import { getAllWorkouts } from "@/lib/workout";
 import { IWorkout } from "@/type/WorkOutType";
-import WorkOutCard from "../shared/WorkOutCard";
+import WorkOutCard from "../../components/shared/WorkOutCard";
 
 const AllWorkout = async () => {
   const allWorkOuts = await getAllWorkouts();

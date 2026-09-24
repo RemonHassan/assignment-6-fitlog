@@ -1,5 +1,5 @@
-import AllWorkout from "@/components/homepage/AllWorkout";
-import Banner from "@/components/homepage/Banner";
+import AllWorkout from "@/app/homepage/page";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
