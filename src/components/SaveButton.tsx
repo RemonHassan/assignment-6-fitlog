@@ -20,7 +20,6 @@ const SaveButton = ({ singleWorkout }: { singleWorkout: IWorkout }) => {
 
     setSave([...save, singleWorkout]);
     toast.success(`Saved ${singleWorkout.name}`);
-    console.log(save);
   };
 
   return (
