@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { getAllWorkouts } from "@/lib/workout";
 import { IWorkout } from "@/type/WorkOutType";
-import { MdDateRange } from "react-icons/md";
-import { CiSaveDown2 } from "react-icons/ci";
+import PlanButton from "@/components/PlanButton";
+import SaveButton from "@/components/SaveButton";
 
 interface IWorkoutDetailsPageProps {
   params: Promise<{
@@ -150,16 +150,9 @@ const DetailsPage = async ({ params }: IWorkoutDetailsPageProps) => {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-3 pt-2">
-            <button className="btn btn-success text-black">
-              <MdDateRange className="text-lg text-black" />
-              Add to today&apos;s plan
-            </button>
+            <PlanButton singleWorkout={singleWorkout}></PlanButton>
 
-            <button className="flex items-center gap-2 bg-[#121418] hover:bg-zinc-800 text-zinc-300 font-extrabold text-xs tracking-wider uppercase py-3 px-5 rounded-lg border border-zinc-800 transition-all active:scale-95 cursor-pointer">
-              <CiSaveDown2 />
-
-              <span>Save for later</span>
-            </button>
+            <SaveButton singleWorkout={singleWorkout}></SaveButton>
           </div>
         </div>
       </div>

@@ -2,6 +2,9 @@ import Link from "next/link";
 import logo from "@/assets/logo.png";
 import Image from "next/image";
 
+import NavSavebtn from "../NavSavebtn";
+import NavPlanBtn from "../NavPlanBtn";
+
 const NavBar = () => {
   const links = (
     <>
@@ -52,19 +55,9 @@ const NavBar = () => {
           </nav>
 
           <div className="navbar-end flex flex-1 items-center justify-end gap-6">
-            <Link
-              href="/plans"
-              className="hidden items-center gap-2 text-xs text-gray-400 transition hover:text-white sm:flex"
-            >
-              <span>{`Plan`}</span>
-            </Link>
+            <NavPlanBtn></NavPlanBtn>
 
-            <Link
-              href="/plans"
-              className="hidden items-center gap-2 text-xs text-gray-400 transition hover:text-white sm:flex"
-            >
-              <span>{`Saved`}</span>
-            </Link>
+            <NavSavebtn></NavSavebtn>
 
             {/* Mobile Menu */}
             <div className="dropdown dropdown-end lg:hidden">
