@@ -29,7 +29,7 @@ const ColSaveCard = ({ p }: { p: IWorkout }) => {
     }
 
     setPlan([...plan, p]);
-    handleRemove(id);
+
     toast.success(`Moved ${p.name} to today's plan!`);
   };
 
