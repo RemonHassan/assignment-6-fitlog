@@ -12,7 +12,7 @@ const NavPlanBtn = () => {
       className="hidden items-center gap-2 text-xs text-white transition  sm:flex"
     >
       <span>{`Plan`}</span>
-      <p className="bg-[#C2F800] w-[18] h-[18] text-black rounded-full text-center">{`${plan.length}`}</p>
+      <p className="bg-[#ccff00] w-[18] h-[18] text-black rounded-full text-center">{`${plan.length}`}</p>
     </Link>
   );
 };
